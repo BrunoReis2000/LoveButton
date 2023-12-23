@@ -20,7 +20,7 @@ function foo()
 
 $(document).ready(function(){
 	$('.slick-demo' ).slick({
-		autoplay: false,
+		autoplay: true,
 		infinite: true,
 		autoplaySpeed: 2000,
 		arrows: true,
