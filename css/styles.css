@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-color: rgba(255, 5, 80, 0.905);
+}
+
+
+/*Start SLICK-------------------------------------------------*/
+.slick-demo img {
+  float: left;
+  width:  200px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.slick-demo{ 
+  object-fit: cover;
+  max-width: 600px;
+	margin: 0 auto;
+}
+
+.slick-dots{
+  position: unset;
+  text-align: center;
+  margin: 0 7px;
+
+}
+.slick-dots li.slick-active button:before, .slick-dots li button:before {
+  color: #FFF;
+  opacity: 1;
+  font-size: 20px;
+}
+.slick-dots li.slick-active button {
+  border: 7px solid rgb(252, 111, 209);
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button:before {
+  color: transparent;
+}
+
+.slick-dots li button {
+  width: 7px;
+  height: 7px;
+  padding: 3px;
+}
+
+.slick-dots li button:before{  
+    width: 7px;
+    height: 7px;
+}
+
+.slick-active{  /*BAD FIX*/
+  top: 7px;
+  right: 6px;
+}
+
+.slick-next, 
+.slick-prev {
+  background-color: rgb(252, 111, 209) !important;
+  border-radius: 50%;
+  width: 30px;
+    height: 30px;
+    z-index: 2;
+    margin-inline: -10px;
+}
+
+.slick-next:hover, 
+.slick-prev:hover {
+  background-color: rgba(252, 111, 210, 0.664) !important;
+  border-radius: 50%;
+}
+
+
+/*END SLICK-------------------------------------------------*/
+
+
+.content-wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+ .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.content-wrapper .container .title{
+  color: bisque;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper .container .title h1{
+  text-align: center;
+  user-select: none;
+}
+
+.content-wrapper .container .buttons{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  margin-left: 25% ;
+}
+
+
+.content-wrapper .container .buttons input{
+  padding-inline: 20px;
+  padding-block: 7px;
+  font-size: medium;
+  color: bisque;
+  background-color: transparent;
+  border: 0;
+  text-transform: uppercase; 
+}
+
+.content-wrapper .container .buttons .btn1{
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.25);
+  background-color: rgb(252, 111, 209);
+  border: 0px;
+  text-align: center;
+  border-radius: 7%;
+  cursor: pointer;
+}
+
+.content-wrapper .container .buttons .btn2{
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.25);
+  background-color: rgb(252, 111, 209);
+  border: 0px;
+  border-radius: 7%;
+  z-index: 2; 
+  position: absolute;
+  left: 51%;
+}
+
+
+div#greenbox
+{
+    display: none;    
+}
