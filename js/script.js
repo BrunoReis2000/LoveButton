@@ -35,9 +35,13 @@ $(document).ready(function(){
 
     // Attach click event to the button
     $("#btn1").click(function(){
-        if (clickSound.readyState === 4) {
+        if (clickSound.readyState === 4){
             // Play the sound
-            clickSound.play();
+                if (clickSound.paused) {
+                    clickSound.play();
+                }else{
+                    clickSound.currentTime = 0
+                }
         } else {
             // If the audio is not yet fully loaded, listen for the 'canplaythrough' event
             clickSound.addEventListener('canplaythrough', function() {
@@ -45,7 +49,6 @@ $(document).ready(function(){
                 clickSound.play();
             });
         }
-    
     });
 
     // Pass in the id of an element
